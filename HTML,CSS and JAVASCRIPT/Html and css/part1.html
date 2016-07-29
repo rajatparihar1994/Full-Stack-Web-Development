@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+    <h1>Please Enter Details For Our Dating Website!</h1>
+    <form action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="post" enctype="multipart/form-data" >
+    <fieldset>
+    <legend>Your Face</legend>
+        Your Face : <input type="file" required><br>
+        Image Preview : <img id="preview">
+    </fieldset>
+    
+    <fieldset>
+    <legend>Your general details</legend>
+        Name : <input type="text" name="name" required><br>
+        Gender: <input type="radio" id="gendermale" name="gender" required><label for="gendermale">Male</label> 
+                <input type="radio" id="genderfemale" name="gender" value="Male" required><label for="genderfemale">Female</label> <br>
+        Age : <input type="number" name="age" required > <br>
+        Date of birth : <input type="date" name="dob"> <br>
+        Favorite color : <input type="color" name="color"> <br>
+        Which country : <select name="country" required>
+                            <option disabled selected>Select Your City</option>
+                            <option value="India">India</option>
+                            <option value="China">China</option>
+                            <option value="Australiya">Australiya</option>
+                            <option value="Russia">Russia</option>
+                            <option value="Japan">Japan</option>
+                        </select> <br>
+    </fieldset>
+        
+    <fieldset>
+        <legend>Your indicators</legend>
+        Height : Short <input type="range" name="height" min="0" max="100" value="50" step="5"> Tall<br>
+        Salary : Poor <input type="range" name="salary" min="0" max="100"  value="50" step="5"> Rich
+    </fieldset>
+        
+    <fieldset>
+        <legend>Your Contact Information</legend>
+        Email : <input type="email" name="email" required> <br>
+        Mobile : <input type="tel" name="mobile" ><br>
+        Address : <textarea name="address" rows="3" placeholder="Address here..."></textarea><br>
+        Method to contact : <input type="checkbox" id="conmethod1" name="conmethod"><label for="conmethod1">Email</label>
+                            <input type="checkbox" id="conmethod2" name="conmethod"><label for="conmethod2">Whatsapp</label>
+                            <input type="checkbox" id="conmethod3" name="conmethod"><label for="conmethod3">In-app chat</label>
+        
+    </fieldset>
+    
+        <input type="submit" value="Submit!!">
+    </form>
+    <script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
+</body>
